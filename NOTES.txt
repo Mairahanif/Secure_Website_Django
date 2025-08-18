@@ -1,0 +1,33 @@
+python -m venv .venv
+.venv\Scripts\activate
+pip install django
+django-admin startproject inventory_management
+
+python manage.py startapp in
+ventory
+
+python manage.py migrate
+
+python manage.py createsuperuser (set pass and user)
+
+python manage.py runserver (to run)
+
+add files adjust urls etc
+
+pip install django-crispy-forms
+
+pip install crispy-bootstrap5
+
+python manage.py makemigrations inventory
+
+
+Pick a site from bootswatch - https://bootswatch.com/
+(copy it's css stylesheet)
+
+
+
+-inventory_management
+--inventory(app)
+--inventory_management
+  -django files
+-manage.py
